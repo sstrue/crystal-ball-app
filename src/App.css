@@ -1,5 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Righteous&display=swap');
+
+.body {
+  font-family: 'Fascinate Inline', cursive;
+}
+
 .App {
   text-align: center;
+}
+
+.background {
+  background-color: #605b87;
+  background-image: url("./crystal-background.jpg");
+  background-size: cover;
+  padding: 2% 10% 50% 10%;
+}
+
+h1 {
+  color: white;
+  font-family: 'Fascinate Inline';
 }
 
 .App-logo {
