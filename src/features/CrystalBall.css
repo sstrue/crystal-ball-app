@@ -1,0 +1,51 @@
+.circle {
+  border: 3px solid #665dec52;
+  border-radius: 50%;
+  height: 20em;
+  width: 20em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: radial-gradient(circle at 50% 45%, rgba(255, 192, 203, 0.865) 15%, rgba(225, 168, 244, 0.843) 52%, rgba(131, 74, 230, 0.822) 85%);
+  box-shadow: 10px 5px 50px white;
+}
+  
+  .primary-button {
+    color: #fff;
+    letter-spacing: 2px;
+    word-spacing: normal;
+    font-family: 'Fascinate Inline', cursive;
+    font-size: large;
+    display: flex;
+    text-align: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    background-color: rgba(242, 120, 160, 0.759);
+    margin: 0em 5em 2em 5em;
+    padding: 1em 1em;
+    border-width: 6px;
+    border-style: solid;
+    border-radius: 30px;
+    border-left: 0em;
+    border-top: 0em;
+    border-color: #846df2d2;
+  }
+
+  .fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+  }
+  
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

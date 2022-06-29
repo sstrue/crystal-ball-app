@@ -1,0 +1,25 @@
+.ball {
+    margin: auto;
+    padding: 3em 3em 1em 3em;
+    color: white;
+    font-family: 'Righteous', cursive;
+	font-size: large;
+    letter-spacing: 2px;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
