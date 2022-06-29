@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from "react-dom";
+import ReactDOM from 'react-dom';
 import CrystalAnswer from './CrystalAnswer';
 import "./CrystalBall.css";
 
@@ -15,7 +15,7 @@ function Answer(props) {
     );
 }
 
-class CrystalBall extends React.Component {
+export default class CrystalBall extends React.Component {
     constructor(props) {
         super(props);
         this.state = {showAnswer: false};
@@ -47,4 +47,4 @@ class CrystalBall extends React.Component {
     }
 };
 
-render(<CrystalBall />, document.getElementById("root"));
+ReactDOM.render(<CrystalBall />, document.getElementById("root"));
