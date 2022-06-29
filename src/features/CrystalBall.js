@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { render } from "react-dom";
 import CrystalAnswer from './CrystalAnswer';
 import "./CrystalBall.css";
 
@@ -19,13 +20,13 @@ class CrystalBall extends React.Component {
         super(props);
         this.state = {showAnswer: false};
         this.handleToggleClick = this.handleToggleClick.bind(this);
-    }
+    };
 
     handleToggleClick() {
         this.setState(state => ({
             showAnswer: !state.showAnswer
         }));
-    }
+    };
 
     render() {
         return (
@@ -44,6 +45,6 @@ class CrystalBall extends React.Component {
             </div>
         );
     }
-}
+};
 
-export class CrystalBall{};
+render(<CrystalBall />, document.getElementById("root"));
